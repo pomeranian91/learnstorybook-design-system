@@ -1,0 +1,63 @@
+@import "./NeoflatButton.css";
+/* :root {
+  --color-gobang_green: #25b9b9;
+  --color-gobang_error: #ff513e;
+} */
+/* :global .color-green {
+  color: #25b9b9;
+} */ /* $example: 2px; */
+.storybook-button {
+  display: inline-block;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.btn-size--small {
+  padding: 6px 10px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.btn-size--medium {
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn-size--large {
+  padding: 12px 14px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.btn-action--basic--primary {
+  border: none;
+  border-radius: 4px;
+  background: var(--color-gobang_green);
+  color: #fff;
+}
+
+.btn-action--basic--secondary {
+  border: 1px solid var(--color-gobang_green);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--color-gobang_green);
+}
+
+.btn-action--error--primary {
+  border: none;
+  border-radius: 4px;
+  background: #ff513e;
+  color: #fff;
+}
+
+.btn-action--error--primary {
+  border: 1px solid #ff513e;
+  border-radius: 4px;
+  background: #fff;
+  color: #ff513e;
+}
