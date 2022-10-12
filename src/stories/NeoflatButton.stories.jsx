@@ -87,7 +87,7 @@ LargeErrorBtn.args = {
 Template.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/o6sm1kf3ov4TR04RfSEw3s/Untitled?node-id=1%3A14",
+    url: "https://www.figma.com/file/o6sm1kf3ov4TR04RfSEw3s/Untitled?node-id=20%3A21",
   },
 };
 
