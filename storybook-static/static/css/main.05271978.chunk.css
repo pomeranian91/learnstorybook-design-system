@@ -1,0 +1,70 @@
+:root {
+  --color-gobang_green: #25b9b9;
+  --color-gobang_error: #ff513e;
+}
+
+/* :root {
+  --color-gobang_green: #25b9b9;
+  --color-gobang_error: #ff513e;
+} */
+/* :global .color-green {
+  color: #25b9b9;
+} */ /* $example: 2px; */
+.neoflatButton_storybook-button__Z1DwU {
+  display: inline-block;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.neoflatButton_btn-size--small__8MD5C {
+  padding: 6px 10px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.neoflatButton_btn-size--medium__3QVeI {
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.neoflatButton_btn-size--large__2GaRZ {
+  padding: 12px 14px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.neoflatButton_btn-action--basic--primary__mObjQ {
+  border: none;
+  border-radius: 4px;
+  background: var(--color-gobang_green);
+  color: #fff;
+}
+
+.neoflatButton_btn-action--basic--secondary__3Sn83 {
+  border: 1px solid var(--color-gobang_green);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--color-gobang_green);
+}
+
+.neoflatButton_btn-action--error--primary__ll7QP {
+  border: none;
+  border-radius: 4px;
+  background: #ff513e;
+  color: #fff;
+}
+
+.neoflatButton_btn-action--error--primary__ll7QP {
+  border: 1px solid #ff513e;
+  border-radius: 4px;
+  background: #fff;
+  color: #ff513e;
+}
+
+
+/*# sourceMappingURL=main.05271978.chunk.css.map*/

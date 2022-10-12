@@ -1,5 +1,6 @@
 import React from "react";
 import NeoflatButton from "./NeoflatButton";
+import { withDesign } from "storybook-addon-designs";
 
 // import { Button } from './Button';
 
@@ -7,6 +8,7 @@ import NeoflatButton from "./NeoflatButton";
 export default {
   title: "Neoflat/NeoflatButton",
   component: NeoflatButton,
+  decorators: [withDesign],
   //스토리북 전체 범위 css
   // decorators: [
   //   (TestButton) => (
@@ -80,6 +82,13 @@ LargeErrorBtn.args = {
   size: "large",
   action: "error",
   primary: true,
+};
+
+Template.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/o6sm1kf3ov4TR04RfSEw3s/Untitled?node-id=1%3A14",
+  },
 };
 
 // export const DisableSmallRedBtn = Template.bind({});
