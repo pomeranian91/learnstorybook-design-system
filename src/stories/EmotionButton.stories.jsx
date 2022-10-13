@@ -1,13 +1,13 @@
 import React from "react";
-import NeoflatButton from "./NeoflatButton";
+import EmotionButton from "./EmotionButton";
 import { withDesign } from "storybook-addon-designs";
 
 // import { Button } from './Button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Neoflat/NeoflatButton",
-  component: NeoflatButton,
+  title: "Neoflat/EmotionButton",
+  component: EmotionButton,
   decorators: [withDesign],
   argTypes: {
     size: {
@@ -20,15 +20,10 @@ export default {
       control: {
         type: "select",
       },
-      options: ["basic", "error"],
-    },
-    primary: {
-      control: {
-        type: "select",
-      },
-      options: ["primary", "secondary"],
+      options: ["primary", "error"],
     },
   },
+
   //스토리북 전체 범위 css
   // decorators: [
   //   (TestButton) => (
@@ -41,76 +36,53 @@ export default {
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template = (args) => <NeoflatButton {...args} />;
+const Template = (args) => <EmotionButton {...args} />;
 
-// export const Large = Template.bind({});
-// Large.args = {
+export const SmallPrimaryBtn = Template.bind({});
+SmallPrimaryBtn.args = {
+  label: "Text",
+  size: "small",
+  action: "primary",
+  able: true,
+};
+
+// export const SmallErrorBtn = Template.bind({});
+// SmallErrorBtn.args = {
+//   label: "Text",
+//   size: "medium",
+//   action: "error",
+//   able: true,
+// };
+// export const MediumBasicBtn = Template.bind({});
+// MediumBasicBtn.args = {
+//   label: "Text",
+//   size: "medium",
+//   action: "basic",
+//   primary: true,
+// };
+
+// export const MediumErrorBtn = Template.bind({});
+// MediumErrorBtn.args = {
+//   label: "Text",
+//   size: "medium",
+//   action: "error",
+//   primary: true,
+// };
+// export const LargeBasicBtn = Template.bind({});
+// LargeBasicBtn.args = {
+//   label: "Text",
 //   size: "large",
-//   label: "Button",
-//   color: "red",
+//   action: "basic",
+//   primary: true,
 // };
 
-// export const Small = Template.bind({});
-// Small.args = {
-//   size: 'small',
-//   label: 'Button',
-//   color: 'blue',
-//   background: '#25b9b9',
+// export const LargeErrorBtn = Template.bind({});
+// LargeErrorBtn.args = {
+//   label: "Text",
+//   size: "large",
+//   action: "error",
+//   primary: true,
 // };
-
-export const Btn = Template.bind({});
-Btn.args = {
-  label: "Text",
-  size: "small",
-  action: "basic",
-  primary: "primary",
-};
-
-export const SmallBasicBtn = Template.bind({});
-SmallBasicBtn.args = {
-  label: "Text",
-  size: "small",
-  action: "basic",
-  primary: "primary",
-};
-
-export const SmallErrorBtn = Template.bind({});
-SmallErrorBtn.args = {
-  label: "Text",
-  size: "small",
-  action: "error",
-  primary: "secondary",
-};
-export const MediumBasicBtn = Template.bind({});
-MediumBasicBtn.args = {
-  label: "Text",
-  size: "medium",
-  action: "basic",
-  primary: "primary",
-};
-
-export const MediumErrorBtn = Template.bind({});
-MediumErrorBtn.args = {
-  label: "Text",
-  size: "medium",
-  action: "error",
-  primary: "secondary",
-};
-export const LargeBasicBtn = Template.bind({});
-LargeBasicBtn.args = {
-  label: "Text",
-  size: "large",
-  action: "basic",
-  primary: "primary",
-};
-
-export const LargeErrorBtn = Template.bind({});
-LargeErrorBtn.args = {
-  label: "Text",
-  size: "large",
-  action: "error",
-  primary: "secondary",
-};
 
 Template.parameters = {
   design: {

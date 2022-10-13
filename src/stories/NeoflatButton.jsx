@@ -11,9 +11,9 @@ const NeoflatButton = ({ size, label, action, ...props }) => {
       type="button"
       className={cx(
         `btn-size--${size}`,
-        props.primary
-          ? `btn-action--${action}--primary`
-          : `btn-action--${action}--secondary`
+        "btn-common",
+
+        `btn-action--${action}--${props.primary}`
       )}
     >
       {label}
@@ -22,14 +22,3 @@ const NeoflatButton = ({ size, label, action, ...props }) => {
 };
 
 export default NeoflatButton;
-
-NeoflatButton.propTypes = {
-  primary: PropTypes.bool,
-  size: PropTypes.oneOf(["small", "medium", "large"]),
-  label: PropTypes.string.isRequired,
-  action: PropTypes.string,
-};
-
-NeoflatButton.defaultProps = {
-  label: "Text",
-};

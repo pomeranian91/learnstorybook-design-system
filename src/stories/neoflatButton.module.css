@@ -16,21 +16,22 @@
   cursor: pointer;
 }
 
+.btn-common {
+  font-weight: 700;
+}
+
 .btn-size--small {
   padding: 6px 10px;
-  font-weight: 700;
   font-size: 12px;
 }
 
 .btn-size--medium {
   padding: 8px 12px;
-  font-weight: 700;
   font-size: 14px;
 }
 
 .btn-size--large {
   padding: 12px 14px;
-  font-weight: 700;
   font-size: 16px;
 }
 
@@ -51,13 +52,13 @@
 .btn-action--error--primary {
   border: none;
   border-radius: 4px;
-  background: #ff513e;
+  background: var(--color-gobang_error);
   color: #fff;
 }
 
-.btn-action--error--primary {
-  border: 1px solid #ff513e;
+.btn-action--error--secondary {
+  border: 1px solid var(--color-gobang_error);
   border-radius: 4px;
   background: #fff;
-  color: #ff513e;
+  color: var(--color-gobang_error);
 }
