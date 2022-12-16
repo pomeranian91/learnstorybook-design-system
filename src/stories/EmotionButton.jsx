@@ -1,23 +1,27 @@
-/** @jsxImportSource @emotion/react */
 import React from "react";
-import PropTypes from "prop-types";
 import { css } from "@emotion/css";
 
 const EmotionButton = ({ size, label, action, ...props }) => {
   return (
     // , actions[action], sizes[size]
-    <button type="button" css={stylea}>
+    <button
+      type="button"
+      css={[
+        css`
+          color: hotpink;
+        `,
+        style,
+        sizes[size],
+        actions[action],
+      ]}
+    >
       {label}
     </button>
   );
 };
 
-const stylea = css`
-  display: inline-block;
-  border: 4px;
-  border-radius: 0px;
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  cursor: pointer;
+const style = css`
+  color: hotpink;
 `;
 
 const sizes = {
@@ -47,12 +51,3 @@ const actions = {
 };
 
 export default EmotionButton;
-
-EmotionButton.propTypes = {
-  able: PropTypes.bool,
-  label: PropTypes.string.isRequired,
-};
-
-EmotionButton.defaultProps = {
-  label: "Text",
-};

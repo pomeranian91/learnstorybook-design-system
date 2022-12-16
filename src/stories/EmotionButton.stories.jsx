@@ -46,44 +46,6 @@ SmallPrimaryBtn.args = {
   able: true,
 };
 
-// export const SmallErrorBtn = Template.bind({});
-// SmallErrorBtn.args = {
-//   label: "Text",
-//   size: "medium",
-//   action: "error",
-//   able: true,
-// };
-// export const MediumBasicBtn = Template.bind({});
-// MediumBasicBtn.args = {
-//   label: "Text",
-//   size: "medium",
-//   action: "basic",
-//   primary: true,
-// };
-
-// export const MediumErrorBtn = Template.bind({});
-// MediumErrorBtn.args = {
-//   label: "Text",
-//   size: "medium",
-//   action: "error",
-//   primary: true,
-// };
-// export const LargeBasicBtn = Template.bind({});
-// LargeBasicBtn.args = {
-//   label: "Text",
-//   size: "large",
-//   action: "basic",
-//   primary: true,
-// };
-
-// export const LargeErrorBtn = Template.bind({});
-// LargeErrorBtn.args = {
-//   label: "Text",
-//   size: "large",
-//   action: "error",
-//   primary: true,
-// };
-
 Template.parameters = {
   design: {
     type: "figma",

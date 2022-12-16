@@ -37,28 +37,28 @@
 
 .btn-action--basic--primary {
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   background: var(--color-gobang_green);
   color: #fff;
 }
 
 .btn-action--basic--secondary {
   border: 1px solid var(--color-gobang_green);
-  border-radius: 4px;
+  border-radius: 10px;
   background: #fff;
   color: var(--color-gobang_green);
 }
 
 .btn-action--error--primary {
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   background: var(--color-gobang_error);
   color: #fff;
 }
 
 .btn-action--error--secondary {
   border: 1px solid var(--color-gobang_error);
-  border-radius: 4px;
+  border-radius: 10px;
   background: #fff;
   color: var(--color-gobang_error);
 }
